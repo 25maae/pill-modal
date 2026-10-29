@@ -8,16 +8,36 @@
  * - Font weights become numbers: Regular -> 400, Medium -> 500, Semi Bold -> 600
  */
 :root {
-  /* Color */
+  /* color */
+  --color-primary: #ff3d8b;
+  --color-secondary: #473dff;
 
-  /* Typography – the font itself is loaded in app/layout.js */
+  /* color / neutral */
+  --white: #ffffff;
+  --black: #000000;
+  --color-neutral-grey-900: #16161a;
+  --colro-neutral-grey-800: #55554f;
+  --color-neutral-grey-200: #d6d6d0;
+
+  /* typography – the font itself is loaded in app/layout.js */
   --font-family-primary: var(--font-inter), sans-serif;
 
-  /* Spacing: gaps and paddings */
+  /* spacing: gaps and paddings */
+  --padding-sm: 20px;
+  --padding-lg: 36px;
+  --gap-md: 12px;
 
-  /* Sizes */
+  /* button height */
+  --btn-height-md: 46px;
 
-  /* Border radius */
+  /* font sizes */
+  --font-size-sm: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 32px;
+
+  /* border radius */
+  --border-radius-md: 24px;
+  --border-radius-full: 9999px;
 }
 
 * {
