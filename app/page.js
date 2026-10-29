@@ -1,16 +1,26 @@
+"use client";
+
+import { useRef } from "react";
 import Modal from "@/components/Modal";
 import Pill from "@/components/Pill";
 import styles from "./page.module.css";
 
 export default function Home() {
+  const modalRef = useRef(null);
+
+  function openModal() {
+    if (modalRef.current && !modalRef.current.open) {
+      modalRef.current.showModal();
+    }
+  }
+
   return (
     <main className={styles.page}>
       <h1>Components</h1>
       <div className={styles.pills}>
-        <Pill />
+        <Pill onClick={openModal} />
       </div>
-      {/* A closed <dialog> is hidden. Give it isOpen to see it in step 1.1. From step 1.2, PillModal opens it. */}
-      <Modal />
+      <Modal ref={modalRef} />
     </main>
   );
 }
