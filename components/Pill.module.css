@@ -25,3 +25,12 @@
   outline: 2px solid var(--color-primary);
   outline-offset: 3px;
 }
+
+.secondary {
+  color: var(--black);
+}
+
+.secondary:hover {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+}

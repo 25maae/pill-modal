@@ -19,6 +19,9 @@ export default function Home() {
       <h1>Components</h1>
       <div className={styles.pills}>
         <Pill onClick={openModal} />
+        <Pill type="secondary" onClick={openModal}>
+          Secondary
+        </Pill>
       </div>
       <Modal ref={modalRef} />
     </main>
