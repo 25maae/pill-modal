@@ -4,7 +4,7 @@
   justify-content: center;
   height: var(--btn-height-md);
   padding: 8px var(--padding-sm);
-  border: 0;
+  border: 1px solid transparent;
   border-radius: var(--border-radius-full);
   background: var(--white);
   color: var(--color-primary);
@@ -14,6 +14,11 @@
   line-height: normal;
   white-space: nowrap;
   cursor: pointer;
+  transition: border-color 150ms ease;
+}
+
+.pill:hover {
+  border-color: var(--color-primary);
 }
 
 .pill:focus-visible {
